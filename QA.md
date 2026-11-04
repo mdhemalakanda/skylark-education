@@ -120,3 +120,18 @@ search (30 results for "preposition") · mega open/close · SSC & HSC tabs · ca
 
 ### Responsive audit matrix (final)
 23 representative pages × 5 widths (390/768/1024/1440/1920) = **115 checks: zero horizontal overflow, zero JS/console errors.** Interactions re-verified on the live deployment: search, mega fit, year filters, TOC, demo forms, mobile nav — all PASS.
+
+### Fifth round — user screenshot audit (color/button/responsive polish)
+
+37. **Cream page background replaced with white** — the warm paper tint read as "beige issue" against the blue theme; base is now white with blue-tinted hairlines.
+38. **Kickers were still gold on all pages** — `body[data-section] .kicker` outranked the override → matched specificity with blue.
+39. **Gold divider lines above section headings removed** — they were `border-top` on the h2 itself (`body[data-section] .section-head h2`), not the pseudo previously overridden.
+40. **Icon bubbles now solid colored circles with white glyphs** (reference style) instead of 12% tints.
+41. **Both "Home" and "Contact" highlighted as active simultaneously** — items with `root: null` matched a null activeRoot; Home now carries its own token and only true matches highlight.
+42. **Footer brand text navy-on-navy** → white/light-blue hierarchy; mark transparent with gold ring.
+43. **Reading progress bar** → brand blue.
+44. **Nav breakpoint 1140px** — 9-item desktop nav overflowed every page at 1024px (1138px scrollWidth); hamburger now owns 900–1139px (verified open/close at 1024).
+45. **Card hover underlines removed** (user screenshot: "Board Exam Prep" underlined on hover).
+
+### Final responsive matrix
+23 pages × 5 widths (390/768/1024/1440/1920): **zero overflow, zero JS errors.** Interaction suite (search, mega fit, filters, TOC, forms, mobile nav): **all PASS.**
