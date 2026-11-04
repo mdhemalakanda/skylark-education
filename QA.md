@@ -135,3 +135,10 @@ search (30 results for "preposition") · mega open/close · SSC & HSC tabs · ca
 
 ### Final responsive matrix
 23 pages × 5 widths (390/768/1024/1440/1920): **zero overflow, zero JS errors.** Interaction suite (search, mega fit, filters, TOC, forms, mobile nav): **all PASS.**
+
+### Sixth round — reference-anatomy match (user side-by-side comparison)
+
+46. **Category & featured card anatomy** — reference puts the icon and title on one row with the description full-width below and "Read More" pinned to the card bottom; the build had them stacked. Rebuilt with CSS grid areas (`icon | title / desc / more`), so "Read More" aligns across each row regardless of text length.
+47. **Checkmarks** — welcome checklist and exam banner used large colored circles; the reference uses small blue check glyphs. Both now render compact blue checks; welcome boxes keep the light bordered style.
+48. **Quick strip** — the four launch cards now read as one white card with hairline vertical dividers between columns on desktop (reference layout), instead of four separated cards.
+49. Verified the new anatomy at 390px and 768px (no overflow) and full linkcheck (0 broken).
