@@ -3039,3 +3039,32 @@ body[data-section] .section-head h2 { border-top: 0; padding-top: 0; }
 @media (min-width: 1140px) {
   .mobile-toggle span { background: var(--ink-900); }
 }
+
+/* ==========================================================================
+   36. Small-phone fit (320–420px) — header shrink + news form unwrap
+   ========================================================================== */
+
+/* Newsletter form had flex-basis 380px — forced wider than small phones. */
+@media (max-width: 480px) {
+  .news-form { flex: 1 1 100%; max-width: 100%; }
+  .news-row { flex-direction: column; }
+  .news-row .btn-cta { width: 100%; justify-content: center; text-align: center; }
+  .news-strip { padding-block: var(--sp-8); }
+}
+
+/* Header must fit 320px: tagline hidden, brand shrinks, actions pinned. */
+@media (max-width: 420px) {
+  .header-inner { gap: var(--sp-2); padding-inline: var(--sp-3); }
+  .brand { min-width: 0; gap: var(--sp-2); }
+  .brand-mark svg { width: 28px; height: 28px; }
+  .brand-text strong { font-size: 1rem; }
+  .brand-text span { font-size: 0.72rem; }
+  .brand-text small { display: none; }
+  .header-actions { flex-shrink: 0; gap: var(--sp-1); }
+  .search-toggle { width: 36px; height: 36px; }
+  .mobile-toggle { width: 36px; height: 36px; }
+  .mobile-toggle span { width: 18px; }
+}
+@media (max-width: 350px) {
+  .brand-text span { display: none; }
+}
