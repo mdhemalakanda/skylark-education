@@ -142,3 +142,12 @@ search (30 results for "preposition") · mega open/close · SSC & HSC tabs · ca
 47. **Checkmarks** — welcome checklist and exam banner used large colored circles; the reference uses small blue check glyphs. Both now render compact blue checks; welcome boxes keep the light bordered style.
 48. **Quick strip** — the four launch cards now read as one white card with hairline vertical dividers between columns on desktop (reference layout), instead of four separated cards.
 49. Verified the new anatomy at 390px and 768px (no overflow) and full linkcheck (0 broken).
+
+### Seventh round — spacing & alignment (user full-page screenshot audit)
+
+50. **"Read More" links floated at different heights across each card row** — grid areas were all `auto`-sized so the description row never stretched → `grid-template-rows: auto 1fr auto` + `align-self: end` pins the link to the card bottom (verified: both rows align within 2px).
+51. **Inconsistent section rhythm** — the gap under the quick strip (≈38px) was a fraction of every other section gap (≈96px) → removed the special-case squeeze; the strip section now flows with the same generous spacing.
+52. **Hero art nearly touched the overlapping quick strip** — hero bottom padding increased (56px extra on desktop, 40px on mobile) so the strip straddles the hero edge with clean blue space behind it.
+53. **Exam banner and quick-card internals** slightly roomier; newsletter strip vertical padding raised.
+
+Verified: Read More row-alignment measured programmatically (both rows ≤2px delta), mobile 390px no overflow, 0 broken links across 90,209.
