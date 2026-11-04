@@ -106,3 +106,17 @@ search (30 results for "preposition") · mega open/close · SSC & HSC tabs · ca
 - Real mobile devices (tested via viewport emulation only).
 - Safari/Firefox (Chromium only in this environment).
 - Screen-reader UX beyond semantic markup/ARIA attributes being present and correctly wired.
+
+### Fourth round — blue education re-theme (reference layout) + responsive audit
+
+29. **Full re-theme to the reference design**: navy top bar (phone/email + social + Login/Register), white header with tagline + "Start Learning" CTA, light-blue hero ("Learn · Practice · Excel"), 4-card quick strip, Welcome section with checklist, 8-card category grid, SSC & HSC exam banner with checklist, "Why Choose" cards, founder quote band, featured resources, navy newsletter strip. Typography moved to Plus Jakarta Sans headings + Inter UI; blue primary (#1d59e0) replaces gold as chrome accent. Section hues for grammar/literature/etc. retained.
+30. **Honesty kept**: the reference's student testimonials with star ratings were NOT fabricated — replaced with real featured-resource cards. "Experienced Instructor" claim replaced with the factual rule-and-example method.
+31. **Reveal made progressive-enhancement safe** — content visible by default; hidden only after JS arms the page; reduced-motion users get no hiding at all.
+32. **Desktop nav breakpoint raised to 1140px** — 9-item nav overflowed every page at 1024px (1138px scrollWidth); hamburger now serves 900–1139px.
+33. **Mega compact grid unwrapped** — nested `.mega-grid` containers produced 77px columns and badge collisions; single grid, 2×289px columns, badges inline.
+34. **Search overlay fully styled** — `.search-box`, `.search-close`, result groups, snippets and `<mark>` highlights had no CSS at all.
+35. **Search slow-network race** — typing before the lazy index resolved threw "index is not iterable"; render now retries after the index arrives.
+36. **GitHub Pages base-path support** — `BASE_PATH` build flag + single-pass link rewriting (a sequential replace double-prefixed every home link); `OUT_DIR` separates publish builds from the local build.
+
+### Responsive audit matrix (final)
+23 representative pages × 5 widths (390/768/1024/1440/1920) = **115 checks: zero horizontal overflow, zero JS/console errors.** Interactions re-verified on the live deployment: search, mega fit, year filters, TOC, demo forms, mobile nav — all PASS.
