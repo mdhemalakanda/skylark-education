@@ -2810,3 +2810,45 @@ button.tab[aria-selected="true"], .tab.is-active { background: var(--sky-100); }
   .mobile-toggle { display: grid !important; }
   .mobile-nav.is-open { display: block !important; }
 }
+
+/* ==========================================================================
+   30. Theme pass 3 — white base, blue kickers everywhere, solid icon
+       bubbles, clean section heads, footer brand polish
+   ========================================================================== */
+:root {
+  --paper: #ffffff;          /* white base like the reference — no cream */
+  --line: #e3eaf3;           /* blue-tinted hairlines */
+  --sky-100: #e9f0ff;
+  --sky-50: #f4f8ff;
+}
+
+/* Kickers are blue on EVERY section, beating body[data-section] rules. */
+body[data-section] .kicker { color: var(--brand); }
+body[data-section] .kicker::before { background: var(--brand); }
+.kicker { color: var(--brand); }
+
+/* Section heads: no divider line — kicker above, heading below. */
+body[data-section] .section-head h2 { border-top: 0; padding-top: 0; }
+
+/* Solid colored icon bubbles with white glyphs (reference style). */
+.icon-bubble { background: var(--ic, var(--brand)); color: #fff; }
+.icon-bubble svg { stroke: #fff; }
+
+/* Nav active/hover pills in blue tint. */
+.nav-link.is-active, .nav-link:hover { background: var(--sky-100); color: var(--brand); }
+
+/* Hero: solid light-blue band. */
+.hero {
+  background: linear-gradient(180deg, var(--sky-100) 0%, var(--sky-50) 100%);
+  border-bottom: 1px solid var(--sky-100);
+}
+.hero-copy h1 { color: var(--navy-bar); }
+
+/* Footer brand: white text, gold-ringed mark on navy. */
+.footer-brand .brand-text strong { color: #fff; font-size: 1.1rem; }
+.footer-brand .brand-text span { color: #9fb0d8; }
+.footer-brand .brand-text small { color: #8294bd; }
+.footer-brand .brand-mark svg circle:first-of-type { fill: transparent; }
+
+/* Footer social + reading progress accents. */
+.reading-progress::before { background: var(--brand); }
