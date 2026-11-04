@@ -2922,3 +2922,39 @@ body[data-section] .section-head h2 { border-top: 0; padding-top: 0; }
 @media (min-width: 1000px) {
   .section--tight { padding-block: 0 var(--sp-10, var(--sp-8)); }
 }
+
+/* ==========================================================================
+   32. Spacing & alignment pass — bottom-pinned card links, section rhythm,
+       hero breathing room
+   ========================================================================== */
+
+/* Read More pins to the card bottom: rows auto / 1fr / auto so the
+   description row stretches and every card in a row aligns. */
+.cat-card,
+.feat-card {
+  grid-template-rows: auto 1fr auto;
+}
+.cat-card .qc-more,
+.feat-card .qc-more { margin-top: var(--sp-3); align-self: end; }
+
+/* Consistent section rhythm: no special-case squeeze after the strip. */
+.section--tight { padding-block: 0; }
+.section--tight + .section { padding-top: var(--sp-16); }
+
+/* Hero needs blue space below the art for the overlapping strip. */
+@media (min-width: 900px) {
+  .hero > .container { padding-block: var(--sp-16) calc(var(--sp-16) + 56px); }
+}
+@media (max-width: 899.9px) {
+  .hero > .container { padding-bottom: calc(var(--sp-12) + 40px); }
+}
+
+/* Welcome section: align the CTA with a little more room under the checks. */
+.welcome-copy .btn { margin-top: var(--sp-2); }
+
+/* Exam banner and quick cards: slightly roomier internals. */
+.exam-banner { padding: var(--sp-8); }
+.quick-card { padding: var(--sp-3) var(--sp-4); }
+
+/* Newsletter strip: a touch more vertical air. */
+.news-strip { padding-block: var(--sp-10, var(--sp-8)) ; padding-block: var(--sp-12); }
