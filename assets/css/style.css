@@ -3002,3 +3002,16 @@ body[data-section] .section-head h2 { border-top: 0; padding-top: 0; }
 
 /* Founder avatar a touch larger. */
 .founder-avatar svg { width: 132px; height: 132px; }
+
+/* ==========================================================================
+   34. Button color fix — primary buttons: white label on brand blue.
+       The legacy .btn-primary rule forced ink-950 text, which read as a
+       dark smudge on the blue background.
+   ========================================================================== */
+.btn-primary { color: #fff !important; }
+.btn-primary:hover { color: #fff !important; }
+.btn-cta { color: #fff !important; }
+.btn-light { color: var(--ink-900); }
+.btn-light:hover { color: var(--ink-900); }
+/* Solid navy chips keep white labels too. */
+.chip.is-active { color: #fff; }
