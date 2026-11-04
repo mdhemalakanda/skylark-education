@@ -304,6 +304,12 @@
 
       if (!q) { results.innerHTML = ''; return; } // empty query shows nothing
 
+      // Index still loading (slow network): retry once it arrives.
+      if (!index && !indexFailed) {
+        loadIndex().then(() => render(input ? input.value.trim() : ''));
+        return;
+      }
+
       if (indexFailed) {
         results.innerHTML =
           '<p class="empty">Search is unavailable right now — the index could not be loaded.</p>';
