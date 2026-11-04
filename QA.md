@@ -167,3 +167,12 @@ all 6 primary/CTA buttons white-on-blue · card paddings 24px · why-card grid a
 
 ### Production verification after round 9
 hamburger bars visible + nav opens at 550px · buttons white-on-blue (6/6) · card paddings 24px · live search · mega fit · year filters · no mobile overflow · **zero console errors**.
+
+### Tenth round — small-phone overflow (user report: "right has scroll, bar is too big")
+
+58. **Horizontal scroll at 320–375px on every page** — the header's brand + actions needed 383px minimum, overflowing 360/375px phones; at ≤420px the tagline now hides, brand/action sizes tighten, and the whole header fits 320px.
+59. **Newsletter form forced 380px wide** (flex-basis) — overflowed small screens; at ≤480px it stacks vertically with a full-width Subscribe button.
+60. **Responsive test matrix extended down to 320px** — earlier sweeps started at 390px and missed real small-phone widths.
+
+### Live verification (production, after deploy)
+6 pages × 4 small widths (320/360/375/414) = **24 checks: zero overflow, zero JS errors.** Screenshots confirm header fit and stacked newsletter at 360px.
