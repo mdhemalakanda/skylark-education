@@ -151,3 +151,12 @@ search (30 results for "preposition") · mega open/close · SSC & HSC tabs · ca
 53. **Exam banner and quick-card internals** slightly roomier; newsletter strip vertical padding raised.
 
 Verified: Read More row-alignment measured programmatically (both rows ≤2px delta), mobile 390px no overflow, 0 broken links across 90,209.
+
+### Eighth round — the real button-color root cause
+
+54. **Primary buttons rendered dark-navy text on blue** — the legacy `.btn-primary { color: var(--ink-950) }` rule survived every theme pass because they only replaced `background`. Fixed with white labels (verified: all 6 primary/CTA instances compute `rgb(29,89,224)/rgb(255,255,255)` on production).
+55. **Deploy logjam** — repeated pushes stacked three Pages builds; one sat "in_progress" 25+ minutes while the live site served stale CSS, making earlier fixes appear broken. Resolved by force-requesting a fresh build (`POST /pages/builds`); ground truth comes from `pages/builds/latest`, not the stale run list.
+56. Outline button vertical metrics verified centered (11px/13px delta — imperceptible; the user's screenshot predated the deploy).
+
+### Production verification (final, on mdhemalakanda.github.io)
+all 6 primary/CTA buttons white-on-blue · card paddings 24px · why-card grid anatomy · Read More row-aligned (≤2px) · live search returns results · mega fits viewport · year filter narrows correctly · mobile nav opens · no mobile overflow · **zero JS/console errors**.
