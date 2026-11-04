@@ -2852,3 +2852,73 @@ body[data-section] .section-head h2 { border-top: 0; padding-top: 0; }
 
 /* Footer social + reading progress accents. */
 .reading-progress::before { background: var(--brand); }
+
+/* ==========================================================================
+   31. Reference-match pass — card anatomy, compact checks, strip dividers
+   ========================================================================== */
+
+/* Category cards: icon + title on one row, description full-width,
+   Read More pinned to the card bottom (equal across the row). */
+.cat-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas:
+    "icon title"
+    "desc desc"
+    "more more";
+  column-gap: var(--sp-3);
+  row-gap: var(--sp-2);
+  align-items: start;
+}
+.cat-card .icon-bubble { grid-area: icon; }
+.cat-card strong { grid-area: title; align-self: center; }
+.cat-card span { grid-area: desc; }
+.cat-card .qc-more { grid-area: more; margin-top: var(--sp-2); }
+
+/* Featured cards: same anatomy. */
+.feat-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas:
+    "icon title"
+    "desc desc"
+    "more more";
+  column-gap: var(--sp-3);
+  row-gap: var(--sp-2);
+  align-items: start;
+}
+.feat-card .icon-bubble { grid-area: icon; }
+.feat-card strong { grid-area: title; align-self: center; }
+.feat-card span { grid-area: desc; }
+.feat-card .qc-more { grid-area: more; margin-top: var(--sp-2); }
+
+/* Welcome + exam checkmarks: small blue checks (reference), not circles. */
+.check-grid .icon-bubble,
+.check-list .icon-bubble {
+  background: transparent;
+  width: auto;
+  height: auto;
+  border-radius: 0;
+}
+.check-grid .icon-bubble svg,
+.check-list .icon-bubble svg {
+  width: 20px;
+  height: 20px;
+  stroke: var(--brand);
+}
+.check-grid li {
+  background: var(--sky-50);
+  border: 1px solid var(--line);
+}
+
+/* Quick strip: one white card, four columns with hairline dividers. */
+@media (min-width: 1000px) {
+  .quick-strip { gap: 0; padding: var(--sp-2); }
+  .quick-card { border-radius: var(--r-md); padding: var(--sp-4) var(--sp-4); }
+  .quick-card + .quick-card { border-left: 1px solid var(--line); border-radius: 0; }
+}
+
+/* Hero quick strip card should sit flush with hero bottom like reference. */
+@media (min-width: 1000px) {
+  .section--tight { padding-block: 0 var(--sp-10, var(--sp-8)); }
+}
