@@ -160,3 +160,10 @@ Verified: Read More row-alignment measured programmatically (both rows ≤2px de
 
 ### Production verification (final, on mdhemalakanda.github.io)
 all 6 primary/CTA buttons white-on-blue · card paddings 24px · why-card grid anatomy · Read More row-aligned (≤2px) · live search returns results · mega fits viewport · year filter narrows correctly · mobile nav opens · no mobile overflow · **zero JS/console errors**.
+
+### Ninth round — hamburger button
+
+57. **Mobile hamburger rendered as an empty box** — the stylesheet styled `.mobile-toggle svg`, but the actual markup is three `<span>` bars, which had no rules and computed to zero size. Bars now styled (20×2px, navy, rounded, hover→blue); verified rendering at 550px and 390px on production, nav opens from it.
+
+### Production verification after round 9
+hamburger bars visible + nav opens at 550px · buttons white-on-blue (6/6) · card paddings 24px · live search · mega fit · year filters · no mobile overflow · **zero console errors**.
