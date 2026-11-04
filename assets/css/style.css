@@ -2958,3 +2958,47 @@ body[data-section] .section-head h2 { border-top: 0; padding-top: 0; }
 
 /* Newsletter strip: a touch more vertical air. */
 .news-strip { padding-block: var(--sp-10, var(--sp-8)) ; padding-block: var(--sp-12); }
+
+/* ==========================================================================
+   33. Padding restoration + button fixes + global blue chrome
+   ========================================================================== */
+/* Remaining gold accents (tabs, blockquotes, TOC, focus ring, badges)
+   fold into the blue family — one token remap, site-wide. */
+:root {
+  --gold-500: var(--brand);
+  --gold-600: var(--brand-600);
+  --gold-100: var(--sky-100);
+}
+
+/* Buttons never wrap or clip (header CTA was breaking mid-label). */
+.btn, .btn-cta, .btn-primary, .btn-outline, .btn-light { white-space: nowrap; }
+
+/* Restore card padding — earlier rules used the nonexistent --sp-5 token,
+   which computed to 0 and left card text flush against the edges. */
+.cat-card,
+.feat-card,
+.why-card { padding: var(--sp-6); }
+.quick-strip { padding: var(--sp-6); }
+.founder-band { padding: var(--sp-8); }
+
+/* Why cards match the reference anatomy: icon + title row, desc below. */
+.why-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas:
+    "icon title"
+    "desc desc";
+  column-gap: var(--sp-3);
+  row-gap: var(--sp-2);
+  align-items: start;
+}
+.why-card .icon-bubble { grid-area: icon; }
+.why-card strong { grid-area: title; align-self: center; }
+.why-card span { grid-area: desc; }
+
+/* Search panel breathing room. */
+.search-box { padding: var(--sp-5); }
+.search-results { min-height: 200px; }
+
+/* Founder avatar a touch larger. */
+.founder-avatar svg { width: 132px; height: 132px; }
