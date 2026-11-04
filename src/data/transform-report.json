@@ -1,0 +1,137 @@
+{
+  "total": 360,
+  "bySection": {
+    "academic": 92,
+    "board": 51,
+    "grammar": 88,
+    "literature": 82,
+    "creative-writing": 34,
+    "site": 11,
+    "admission": 2
+  },
+  "duplicates": [
+    "gap-filling-textual",
+    "the-story-of-an-hour",
+    "passage-narration",
+    "2023-2",
+    "capitalization-and-punctuation",
+    "interchange-of-part-of-speech",
+    "transformation-of-sentences",
+    "conjugation-of-verbs"
+  ],
+  "skipped": [
+    {
+      "slug": "elementor-8231",
+      "kind": "page",
+      "reason": "internal WP/Elementor template page"
+    },
+    {
+      "slug": "elementor-8179",
+      "kind": "page",
+      "reason": "internal WP/Elementor template page"
+    },
+    {
+      "slug": "elementor-8058",
+      "kind": "page",
+      "reason": "internal WP/Elementor template page"
+    },
+    {
+      "slug": "learn-english-smarter-with-skylark-education",
+      "kind": "page",
+      "reason": "internal WP/Elementor template page"
+    },
+    {
+      "slug": "a",
+      "kind": "page",
+      "reason": "internal WP/Elementor template page"
+    },
+    {
+      "slug": "front-page-latest",
+      "kind": "page",
+      "reason": "internal WP/Elementor template page"
+    },
+    {
+      "slug": "elementor-6357",
+      "kind": "page",
+      "reason": "internal WP/Elementor template page"
+    },
+    {
+      "slug": "elementor-5147",
+      "kind": "page",
+      "reason": "internal WP/Elementor template page"
+    },
+    {
+      "slug": "elementor-1201",
+      "kind": "page",
+      "reason": "internal WP/Elementor template page"
+    },
+    {
+      "slug": "elementor-4201",
+      "kind": "post",
+      "reason": "internal WP/Elementor template page"
+    },
+    {
+      "slug": "elementor-4179",
+      "kind": "post",
+      "reason": "internal WP/Elementor template page"
+    },
+    {
+      "slug": "elementor-3435",
+      "kind": "post",
+      "reason": "internal WP/Elementor template page"
+    },
+    {
+      "slug": "elementor-3424",
+      "kind": "post",
+      "reason": "internal WP/Elementor template page"
+    },
+    {
+      "slug": "elementor-2635",
+      "kind": "post",
+      "reason": "internal WP/Elementor template page"
+    },
+    {
+      "slug": "elementor-2626",
+      "kind": "post",
+      "reason": "internal WP/Elementor template page"
+    },
+    {
+      "slug": "elementor-2613",
+      "kind": "post",
+      "reason": "internal WP/Elementor template page"
+    },
+    {
+      "slug": "elementor-2569",
+      "kind": "post",
+      "reason": "internal WP/Elementor template page"
+    },
+    {
+      "slug": "elementor-2526",
+      "kind": "post",
+      "reason": "internal WP/Elementor template page"
+    },
+    {
+      "slug": "elementor-1854",
+      "kind": "post",
+      "reason": "internal WP/Elementor template page"
+    }
+  ],
+  "unclassified": [],
+  "bengaliCount": 183,
+  "zeroWords": [
+    "board",
+    "register",
+    "log-in",
+    "newsletter",
+    "board-question",
+    "admission",
+    "academic",
+    "creative-writing",
+    "grammar",
+    "text-book-9-10",
+    "text-book-11-12",
+    "text-book-5",
+    "marks-distribution-for-hsc",
+    "direct-and-indirect-speeches-narration"
+  ]
+}

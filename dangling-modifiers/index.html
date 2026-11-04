@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dangling Modifiers — Skylark Education</title>
+<meta name="description" content="Dangling Modifier Definition: A dangling modifier is a descriptive phrase or clause that doesn’t logically relate to the word it intends to modify because that…">
+<meta name="site-root" content="/skylark-education/">
+<meta property="og:title" content="Dangling Modifiers — Skylark Education">
+<meta property="og:description" content="Dangling Modifier Definition: A dangling modifier is a descriptive phrase or clause that doesn’t logically relate to the word it intends to modify because that…">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Hind+Siliguri:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/skylark-education/skylark-education/assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44'%3E%3Ccircle cx='22' cy='22' r='21' fill='%2312253d'/%3E%3Cpath d='M13 24c3.5-8 8-12.5 15-14-2.5 4.4-2.7 8-1 11.2-2.8-.5-4.6-1.8-5.6-3.7-.4 2.9.8 5.2 3.5 6.9-4 .9-8.1.7-11.9-.4z' fill='%23d99a2b'/%3E%3C/svg%3E">
+</head>
+<body data-section="grammar" data-page="article">
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="reading-progress" aria-hidden="true"><span></span></div>
+<div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-contact">
+        <a href="tel:+8801521441859"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.6 15.6 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.6 1 1 0 0 1-.25 1z"/></svg>+8801521441859</a>
+        <a href="mailto:tuhin0011@gmail.com"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>tuhin0011@gmail.com</a>
+      </div>
+      <div class="topbar-actions">
+        <a href="mailto:tuhin0011@gmail.com" aria-label="Email" class="topbar-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a>
+        <a href="https://wa.me/8801521441859" rel="noopener" aria-label="WhatsApp" class="topbar-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.1 13.9c-.2.6-1.2 1.1-1.7 1.1-.4.1-1 .1-1.6-.1a13 13 0 0 1-5.8-5.1c-.6-1-.9-1.9-.9-2.7 0-.8.4-1.5.8-1.9.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6c-.2.2-.3.4-.1.7a8 8 0 0 0 3.6 3.1c.3.1.5.1.7-.1l.8-.9c.2-.3.4-.2.7-.1l2 1c.3.2.5.3.5.5s0 .8-.4 1.2z"/></svg></a>
+        <a class="topbar-auth" href="/skylark-education/account/log-in/">Login / Register</a>
+      </div>
+    </div>
+  </div><header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="/skylark-education/skylark-education/" aria-label="Skylark Education — home">
+      <svg class="brand-mark" viewBox="0 0 44 44" width="40" height="40" fill="none" aria-hidden="true">
+    <circle cx="22" cy="22" r="21" class="bm-ring"/>
+    <path d="M8 29c4.5 3.4 9 5 14 5s9.5-1.6 14-5" class="bm-book"/>
+    <path d="M13 24c3.5-8 8-12.5 15-14-2.5 4.4-2.7 8-1 11.2-2.8-.5-4.6-1.8-5.6-3.7-.4 2.9.8 5.2 3.5 6.9-4 .9-8.1.7-11.9-.4z" class="bm-bird"/>
+    <path d="M28 27l3.4 2.2L28.4 31" class="bm-note"/>
+  </svg>
+      <span class="brand-text"><strong>Skylark</strong> <span>Education</span><small>Nurturing young recruits with pride and care</small></span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <ul class="nav-list"><li class="nav-item"><a class="nav-link" href="/skylark-education/skylark-education/">Home</a></li>
+<li class="nav-item has-mega">
+        <button class="nav-link is-active" type="button" aria-expanded="false" aria-haspopup="true">Grammar</button>
+        <div class="mega" role="menu"><div class="mega-grid mega-grid--compact">
+          <a class="mega-group" href="/skylark-education/grammar/parts-of-speech/">Parts of Speech <span class="mega-count">15</span></a>
+          <a class="mega-group" href="/skylark-education/grammar/tense-verbs/">Tense &amp; Verbs <span class="mega-count">9</span></a>
+          <a class="mega-group" href="/skylark-education/grammar/sentence-transformation/">Sentence &amp; Transformation <span class="mega-count">16</span></a>
+          <a class="mega-group" href="/skylark-education/grammar/narration/">Narration <span class="mega-count">6</span></a>
+          <a class="mega-group" href="/skylark-education/grammar/preposition-article/">Preposition &amp; Article <span class="mega-count">8</span></a>
+          <a class="mega-group" href="/skylark-education/grammar/prefix-suffix-connectors/">Prefix, Suffix &amp; Connectors <span class="mega-count">9</span></a>
+          <a class="mega-group" href="/skylark-education/grammar/completing-modifiers/">Completing Sentences &amp; Modifiers <span class="mega-count">7</span></a>
+          <a class="mega-group" href="/skylark-education/grammar/number-gender-case/">Number, Gender &amp; Case <span class="mega-count">3</span></a>
+          <a class="mega-group" href="/skylark-education/grammar/capitalization-punctuation/">Capitalization &amp; Punctuation <span class="mega-count">4</span></a>
+          <a class="mega-group" href="/skylark-education/grammar/vocabulary-reference/">Vocabulary &amp; Reference <span class="mega-count">9</span></a></div></div>
+      </li>
+<li class="nav-item has-mega">
+        <button class="nav-link" type="button" aria-expanded="false" aria-haspopup="true">Literature</button>
+        <div class="mega" role="menu"><div class="mega-grid">
+          <div class="mega-col">
+            <p class="mega-title">Poems</p>
+            <ul><li><a href="/skylark-education/out-out/">‘Out, Out’</a></li><li><a href="/skylark-education/the-school-boy/">The School Boy</a></li><li><a href="/skylark-education/blow-blow-thou-winter-wind/">Blow, blow, thou winter wind</a></li><li><a href="/skylark-education/amidst-killer-speeds-i-stand/">Amidst killer speeds I stand</a></li><li><a href="/skylark-education/how-do-i-love-thee-by-elizabeth-barrett-browning/">How Do I Love Thee? by Elizabeth Barrett Browning</a></li><li><a href="/skylark-education/those-winter-sundays-by-robert-hayden/">Those Winter Sundays by Robert Hayden</a></li></ul>
+          </div>
+          <div class="mega-col">
+            <p class="mega-title">Prose &amp; Stories</p>
+            <ul><li><a href="/skylark-education/green-escape/">Green Escape</a></li><li><a href="/skylark-education/contemplation/">Contemplation</a></li><li><a href="/skylark-education/the-news/">The News</a></li><li><a href="/skylark-education/the-story-of-an-hour/">The Story of an Hour</a></li><li><a href="/skylark-education/the-trial/">The Trial</a></li><li><a href="/skylark-education/the-three-caskets/">The Three Caskets</a></li></ul>
+          </div>
+          <div class="mega-col">
+            <p class="mega-title">Passages &amp; Biographies</p>
+            <ul><li><a href="/skylark-education/a-long-time-ago-when-raju-was/">A long time ago, when Raju was</a></li><li><a href="/skylark-education/begum-rokeya/">Begum Rokeya</a></li><li><a href="/skylark-education/helen-keller-was-a-great-humanitarian/">Helen Keller was a great humanitarian</a></li><li><a href="/skylark-education/one-moming-the-giant-was-lying/">One moming the Giant was lying</a></li><li><a href="/skylark-education/the-giant-felt-sorry/">The giant felt sorry</a></li><li><a href="/skylark-education/pele-is-widely-regarded/">Pelé is widely regarded</a></li></ul>
+          </div>
+          <div class="mega-col">
+            <p class="mega-title">Literary Terms &amp; Guides</p>
+            <ul><li><a href="/skylark-education/tongue-twister/">Tongue-Twister</a></li><li><a href="/skylark-education/theme-and-summary-of-the-poems/">Theme and Summary of the Poems</a></li><li><a href="/skylark-education/answering-questions-from-poems-for-ssc/">Answering Questions from Poems for SSC</a></li><li><a href="/skylark-education/answering-questions-from-poems/">Answering Questions from Poems</a></li><li><a href="/skylark-education/proverbs/">Proverbs</a></li></ul>
+          </div></div></div>
+      </li>
+<li class="nav-item has-mega">
+        <button class="nav-link" type="button" aria-expanded="false" aria-haspopup="true">Academic</button>
+        <div class="mega" role="menu"><div class="mega-grid mega-grid--compact">
+          <a class="mega-group" href="/skylark-education/academic/">Class 5</a>
+          <a class="mega-group" href="/skylark-education/academic/">Class 6</a>
+          <a class="mega-group" href="/skylark-education/academic/">Class 7</a>
+          <a class="mega-group" href="/skylark-education/academic/">Class 8</a>
+          <a class="mega-group" href="/skylark-education/academic/">Class 9–10 (SSC)</a>
+          <a class="mega-group" href="/skylark-education/academic/">Class 11–12 (HSC)</a>
+          <a class="mega-group" href="/skylark-education/academic/">Passages &amp; Exercises</a></div></div>
+      </li>
+<li class="nav-item has-mega">
+        <button class="nav-link" type="button" aria-expanded="false" aria-haspopup="true">Writing</button>
+        <div class="mega" role="menu"><div class="mega-grid">
+          <div class="mega-col">
+            <p class="mega-title">Paragraph Writing</p>
+            <ul><li><a href="/skylark-education/paragraph-for-hsc/">Paragraph for HSC</a></li><li><a href="/skylark-education/paragraph/">Paragraph</a></li></ul>
+          </div>
+          <div class="mega-col">
+            <p class="mega-title">Letters &amp; Emails</p>
+            <ul><li><a href="/skylark-education/informal-letter/">Informal letter</a></li><li><a href="/skylark-education/formal-letter/">Formal Letter</a></li><li><a href="/skylark-education/informal-email/">Informal Email</a></li><li><a href="/skylark-education/formal-email/">Formal Email</a></li></ul>
+          </div>
+          <div class="mega-col">
+            <p class="mega-title">Composition &amp; Story</p>
+            <ul><li><a href="/skylark-education/composition/">Composition for SSC</a></li><li><a href="/skylark-education/story-writing/">Story Writing</a></li><li><a href="/skylark-education/dialogue-writing/">Dialogue Writing</a></li></ul>
+          </div>
+          <div class="mega-col">
+            <p class="mega-title">Reports &amp; CV</p>
+            <ul><li><a href="/skylark-education/cv-writing/">CV Writing</a></li><li><a href="/skylark-education/report-writing/">Report Writing</a></li></ul>
+          </div>
+          <div class="mega-col">
+            <p class="mega-title">Graph &amp; Chart Writing</p>
+            <ul><li><a href="/skylark-education/graph-chart/">Graph/Chart</a></li></ul>
+          </div>
+          <div class="mega-col">
+            <p class="mega-title">Notices &amp; Complaints</p>
+            <ul><li><a href="/skylark-education/complaint-letter-notice/">Complaint Letter/Notice</a></li></ul>
+          </div></div></div>
+      </li>
+<li class="nav-item has-mega">
+        <button class="nav-link" type="button" aria-expanded="false" aria-haspopup="true">Board Questions</button>
+        <div class="mega" role="menu"><div class="mega-grid">
+          <div class="mega-col">
+            <p class="mega-title">SSC</p>
+            <ul><li><a href="/skylark-education/board-question/ssc/">SSC Board Questions</a></li><li><a href="/skylark-education/marks-distribution-for-ssc-2026/">Marks Distribution SSC 2026</a></li><li><a href="/skylark-education/marks-distribution-for-ssc-2025/">Marks Distribution SSC 2025</a></li><li><a href="/skylark-education/paragraphs-ssc-dakhil-2025/">Paragraphs for SSC 2025</a></li></ul>
+          </div>
+          <div class="mega-col">
+            <p class="mega-title">HSC</p>
+            <ul><li><a href="/skylark-education/board-question/hsc/">HSC Board Questions</a></li><li><a href="/skylark-education/marks-distribution-for-hsc-2026/">Marks Distribution HSC 2026</a></li><li><a href="/skylark-education/marks-distribution-for-hsc-2025/">Marks Distribution HSC 2025</a></li><li><a href="/skylark-education/paragraphs-hsc-alim-2026/">Paragraphs for HSC 2026</a></li></ul>
+          </div>
+          <div class="mega-col">
+            <p class="mega-title">Resources</p>
+            <ul><li><a href="/skylark-education/all-board-2025/">All Board 2025</a></li><li><a href="/skylark-education/all-board-2026/">All Board 2026</a></li><li><a href="/skylark-education/hsc-english-2nd-paper-board-question/">HSC 2nd Paper Board Questions</a></li><li><a href="/skylark-education/board-question/marks-distribution/">Class 6–8 Marks Distributions</a></li></ul>
+          </div></div></div>
+      </li>
+<li class="nav-item"><a class="nav-link" href="/skylark-education/admission/">Admission</a></li>
+<li class="nav-item"><a class="nav-link" href="/skylark-education/contact/">Contact</a></li></ul>
+    </nav>
+    <div class="header-actions">
+      <button class="search-toggle" type="button" aria-label="Search (Ctrl+K)">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M20 20l-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <span>Search</span>
+        <kbd>⌘K</kbd>
+      </button>
+      <a class="btn btn-cta header-cta" href="/skylark-education/grammar/">Start Learning</a>
+      <button class="mobile-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-nav" id="mobile-nav" hidden><nav aria-label="Mobile"><div class="mn-section"><p class="mn-label"><a href="/skylark-education/skylark-education/">Home</a></p></div><div class="mn-section"><p class="mn-label">Grammar</p>
+        <details class="mn-group">
+          <summary>Parts of Speech</summary>
+          <ul><li><a href="/skylark-education/noun/">Noun</a></li><li><a href="/skylark-education/pronoun-and-pronoun-references/">Pronoun and Pronoun References</a></li><li><a href="/skylark-education/adjective/">Adjective</a></li><li><a href="/skylark-education/adverb/">Adverb</a></li><li><a href="/skylark-education/article/">Rules on Article</a></li><li><a href="/skylark-education/preposition/">Preposition</a></li></ul>
+        </details>
+        <details class="mn-group">
+          <summary>Tense &amp; Verbs</summary>
+          <ul><li><a href="/skylark-education/tense/">Tense</a></li><li><a href="/skylark-education/subject-verb-agreement/">Subject Verb Agreement</a></li><li><a href="/skylark-education/rules-on-right-form-of-verbs/">Rules on Right Form of Verbs</a></li><li><a href="/skylark-education/right-form-of-verbs/">Right Form of Verbs</a></li><li><a href="/skylark-education/right-forms-of-verbs/">Right Forms of Verbs</a></li><li><a href="/skylark-education/correct-form-of-verbs-exercises-for-hsc/">Shortcut Rules on Right Form of Verbs</a></li></ul>
+        </details>
+        <details class="mn-group">
+          <summary>Sentence &amp; Transformation</summary>
+          <ul><li><a href="/skylark-education/sentence/">Sentence</a></li><li><a href="/skylark-education/transformation-of-sentences/">Transformation of Sentences</a></li><li><a href="/skylark-education/transformation-of-sentences-2/">Transformation of Sentences</a></li><li><a href="/skylark-education/transformation-from-affirmative-to-negative/">Transformation from Affirmative to Negative</a></li><li><a href="/skylark-education/assertive-to-interrogative/">Assertive to Interrogative</a></li><li><a href="/skylark-education/assertive-to-exclamatory/">Assertive to Exclamatory</a></li></ul>
+        </details>
+        <details class="mn-group">
+          <summary>Narration</summary>
+          <ul><li><a href="/skylark-education/direct-and-indirect-speech-narration/">Direct and Indirect Speech/Narration</a></li><li><a href="/skylark-education/rules-on-narration/">Rules on Narration</a></li><li><a href="/skylark-education/narration-exercises-for-jsc-and-ssc/">Narration Exercises for JSC and SSC</a></li><li><a href="/skylark-education/narration-exercises-for-hsc/">Narration exercises for HSC</a></li><li><a href="/skylark-education/passage-narration/">Passage Narration</a></li><li><a href="/skylark-education/direct-and-indirect-speeches-narration/">Direct and Indirect Speeches/Narration</a></li></ul>
+        </details>
+        <details class="mn-group">
+          <summary>Preposition &amp; Article</summary>
+          <ul><li><a href="/skylark-education/preposition/">Preposition</a></li><li><a href="/skylark-education/rules-on-preposition/">Rules on Preposition</a></li><li><a href="/skylark-education/appropriate-preposition/">Appropriate Preposition</a></li><li><a href="/skylark-education/preposition-exercises/">Preposition Exercises</a></li><li><a href="/skylark-education/preposition-exercise-for-ssc/">Preposition Exercise for SSC</a></li><li><a href="/skylark-education/article/">Rules on Article</a></li></ul>
+        </details>
+        <details class="mn-group">
+          <summary>Prefix, Suffix &amp; Connectors</summary>
+          <ul><li><a href="/skylark-education/prefixes-and-suffixes/">Prefixes and Suffixes</a></li><li><a href="/skylark-education/basics-of-prefixes-and-suffixes/">Basics of Prefixes and Suffixes</a></li><li><a href="/skylark-education/connector/">Connector</a></li><li><a href="/skylark-education/rules-on-connectors/">Rules on Connectors</a></li><li><a href="/skylark-education/connector-exercises-for-ssc/">Connector Exercises for SSC</a></li><li><a href="/skylark-education/connector-exercises-for-hsc/">Exercises for HSC</a></li></ul>
+        </details>
+        <details class="mn-group">
+          <summary>Completing Sentences &amp; Modifiers</summary>
+          <ul><li><a href="/skylark-education/completing-sentences/">Completing Sentences</a></li><li><a href="/skylark-education/rules-on-completing-sentences/">Rules on Completing Sentences</a></li><li><a href="/skylark-education/exercises-on-completing-sentences-for-hsc/">Exercises on Completing Sentences for HSC</a></li><li><a href="/skylark-education/completing-sentences-exercises-for-ssc/">Completing Sentences Exercises for SSC</a></li><li><a href="/skylark-education/completing-with-words-phrases/">Completing with words/phrases</a></li><li><a href="/skylark-education/modifier/">Modifier</a></li></ul>
+        </details>
+        <details class="mn-group">
+          <summary>Number, Gender &amp; Case</summary>
+          <ul><li><a href="/skylark-education/number/">Number</a></li><li><a href="/skylark-education/gender/">Gender</a></li><li><a href="/skylark-education/case/">Case</a></li></ul>
+        </details>
+        <details class="mn-group">
+          <summary>Capitalization &amp; Punctuation</summary>
+          <ul><li><a href="/skylark-education/capitalization-and-punctuation/">Capitalization and Punctuation</a></li><li><a href="/skylark-education/capitalization-and-punctuation-2/">Capitalization and Punctuation</a></li><li><a href="/skylark-education/exercise-on-capital-letter-and-punctuation/">Exercise on capital letter and punctuation</a></li><li><a href="/skylark-education/capital-letters-and-punctuation-marks-for-class-8/">capital letters and punctuation marks for class 8</a></li></ul>
+        </details>
+        <details class="mn-group">
+          <summary>Vocabulary &amp; Reference</summary>
+          <ul><li><a href="/skylark-education/synonym-and-antonym/">Synonym and Antonym</a></li><li><a href="/skylark-education/proverbs/">Proverbs</a></li><li><a href="/skylark-education/pronunciation/">Pronunciation</a></li><li><a href="/skylark-education/inversion/">Inversion</a></li><li><a href="/skylark-education/tag-question/">Tag Question</a></li><li><a href="/skylark-education/phrases-and-clauses/">Phrases and Clauses</a></li></ul>
+        </details></div><div class="mn-section"><p class="mn-label">Literature</p>
+        <details class="mn-group">
+          <summary>Poems</summary>
+          <ul><li><a href="/skylark-education/out-out/">‘Out, Out’</a></li><li><a href="/skylark-education/the-school-boy/">The School Boy</a></li><li><a href="/skylark-education/blow-blow-thou-winter-wind/">Blow, blow, thou winter wind</a></li><li><a href="/skylark-education/amidst-killer-speeds-i-stand/">Amidst killer speeds I stand</a></li><li><a href="/skylark-education/how-do-i-love-thee-by-elizabeth-barrett-browning/">How Do I Love Thee? by Elizabeth Barrett Browning</a></li><li><a href="/skylark-education/those-winter-sundays-by-robert-hayden/">Those Winter Sundays by Robert Hayden</a></li></ul>
+        </details>
+        <details class="mn-group">
+          <summary>Prose &amp; Stories</summary>
+          <ul><li><a href="/skylark-education/green-escape/">Green Escape</a></li><li><a href="/skylark-education/contemplation/">Contemplation</a></li><li><a href="/skylark-education/the-news/">The News</a></li><li><a href="/skylark-education/the-story-of-an-hour/">The Story of an Hour</a></li><li><a href="/skylark-education/the-trial/">The Trial</a></li><li><a href="/skylark-education/the-three-caskets/">The Three Caskets</a></li></ul>
+        </details>
+        <details class="mn-group">
+          <summary>Passages &amp; Biographies</summary>
+          <ul><li><a href="/skylark-education/a-long-time-ago-when-raju-was/">A long time ago, when Raju was</a></li><li><a href="/skylark-education/begum-rokeya/">Begum Rokeya</a></li><li><a href="/skylark-education/helen-keller-was-a-great-humanitarian/">Helen Keller was a great humanitarian</a></li><li><a href="/skylark-education/one-moming-the-giant-was-lying/">One moming the Giant was lying</a></li><li><a href="/skylark-education/the-giant-felt-sorry/">The giant felt sorry</a></li><li><a href="/skylark-education/pele-is-widely-regarded/">Pelé is widely regarded</a></li></ul>
+        </details>
+        <details class="mn-group">
+          <summary>Literary Terms &amp; Guides</summary>
+          <ul><li><a href="/skylark-education/tongue-twister/">Tongue-Twister</a></li><li><a href="/skylark-education/theme-and-summary-of-the-poems/">Theme and Summary of the Poems</a></li><li><a href="/skylark-education/answering-questions-from-poems-for-ssc/">Answering Questions from Poems for SSC</a></li><li><a href="/skylark-education/answering-questions-from-poems/">Answering Questions from Poems</a></li><li><a href="/skylark-education/proverbs/">Proverbs</a></li></ul>
+        </details></div><div class="mn-section"><p class="mn-label">Academic</p>
+        <details class="mn-group">
+          <summary>Class 5</summary>
+          <ul><li><a href="/skylark-education/saikat-islam-lives-with-his-parents/">Saikat Islam lives with his parents</a></li><li><a href="/skylark-education/class-5-2/">Class 5</a></li><li><a href="/skylark-education/text-book-5/">Text Book 5</a></li></ul>
+        </details>
+        <details class="mn-group">
+          <summary>Class 6</summary>
+          <ul><li><a href="/skylark-education/synonym-and-antonym-for-class-6/">Synonym and Antonym for class 6</a></li><li><a href="/skylark-education/my-friend-sajjad-and-i/">My friend Sajjad and I</a></li><li><a href="/skylark-education/seen-passage-for-classs-6/">Seen Passage for Classs 6</a></li><li><a href="/skylark-education/class-6/">Class 6</a></li><li><a href="/skylark-education/articles-exercises-for-class-6-8/">Articles Exercises for Class 6-8</a></li><li><a href="/skylark-education/mariam-is-a-student-of-class-six/">Mariam is a student of class six</a></li><li><a href="/skylark-education/gap-filling-textual-for-class-6/">Gap Filling (Textual) for class 6</a></li></ul>
+        </details>
+        <details class="mn-group">
+          <summary>Class 7</summary>
+          <ul><li><a href="/skylark-education/30-sets-of-model-question-for-class-7/">30 Sets of Model Question for class 7</a></li><li><a href="/skylark-education/zara-lives-with-her-parents-2/">Zara lives with her parents</a></li><li><a href="/skylark-education/zara-lives-with-her-parents-in-london/">Zara lives with her parents in London</a></li><li><a href="/skylark-education/answering-question-from-poems-for-class-7/">Answering Question from Poems For Class 7</a></li><li><a href="/skylark-education/class-7/">Class 7</a></li></ul>
+        </details>
+        <details class="mn-group">
+          <summary>Class 8</summary>
+          <ul><li><a href="/skylark-education/capital-letters-and-punctuation-marks-for-class-8/">capital letters and punctuation marks for class 8</a></li><li><a href="/skylark-education/right-form-of-verbs-for-class-8/">Right Form of Verbs for Class 8</a></li><li><a href="/skylark-education/answering-questions-from-poems-for-class-8/">Answering Questions from Poems for class 8</a></li><li><a href="/skylark-education/seen-passage-for-class-8-2/">Seen Passage for Class 8</a></li><li><a href="/skylark-education/seen-passage-for-class-8/">Seen Passage for Class 8</a></li><li><a href="/skylark-education/text-book-8/">Class 8</a></li><li><a href="/skylark-education/exercises-on-transformation-for-class-8/">Exercises on Transformation for Class 8</a></li></ul>
+        </details>
+        <details class="mn-group">
+          <summary>Class 9–10 (SSC)</summary>
+          <ul><li><a href="/skylark-education/text-book-9-10/">Text Book 9-10</a></li><li><a href="/skylark-education/matching/">Matching</a></li></ul>
+        </details>
+        <details class="mn-group">
+          <summary>Class 11–12 (HSC)</summary>
+          <ul><li><a href="/skylark-education/communication-of-ideas-2/">Communication of ideas</a></li><li><a href="/skylark-education/the-negro-is-still-not-free-2/">(T)he Negro is still not free</a></li><li><a href="/skylark-education/text-book-11-12/">Text Book 11-12</a></li><li><a href="/skylark-education/seen-passage-1/">Seen Passage 1</a></li><li><a href="/skylark-education/seen-passage-2/">Seen Passage 2</a></li><li><a href="/skylark-education/rules-of-flow-chart/">Rules of Flow Chart</a></li><li><a href="/skylark-education/gap-filling-without-clue-2/">Gap Filling Without Clue</a></li><li><a href="/skylark-education/rearrange/">Rearrange</a></li></ul>
+        </details>
+        <details class="mn-group">
+          <summary>Passages &amp; Exercises</summary>
+          <ul><li><a href="/skylark-education/it-was-late-summer/">It was late summer</a></li><li><a href="/skylark-education/the-name-of-my-home-town-is-kishoreganj/">My home district is Kishoreganj</a></li><li><a href="/skylark-education/sima-is-at-home-today/">Sima is at home today</a></li><li><a href="/skylark-education/two-sick-men-were-given-the-same-room/">Two sick men were given the same room</a></li><li><a href="/skylark-education/it-was-zishans-grandparents-house/">It was Zishan’s grandparents’ house</a></li><li><a href="/skylark-education/the-family-gathering-in-the-yard/">The family gathering in the yard</a></li><li><a href="/skylark-education/the-children-had-now-nowhere/">The children had now nowhere</a></li><li><a href="/skylark-education/every-thursday-afternoon-ashish/">Every Thursday afternoon Ashish</a></li></ul>
+        </details></div><div class="mn-section"><p class="mn-label">Writing</p>
+        <details class="mn-group">
+          <summary>Paragraph Writing</summary>
+          <ul><li><a href="/skylark-education/paragraph-for-hsc/">Paragraph for HSC</a></li><li><a href="/skylark-education/paragraph/">Paragraph</a></li></ul>
+        </details>
+        <details class="mn-group">
+          <summary>Letters &amp; Emails</summary>
+          <ul><li><a href="/skylark-education/informal-letter/">Informal letter</a></li><li><a href="/skylark-education/formal-letter/">Formal Letter</a></li><li><a href="/skylark-education/informal-email/">Informal Email</a></li><li><a href="/skylark-education/formal-email/">Formal Email</a></li></ul>
+        </details>
+        <details class="mn-group">
+          <summary>Composition &amp; Story</summary>
+          <ul><li><a href="/skylark-education/composition/">Composition for SSC</a></li><li><a href="/skylark-education/story-writing/">Story Writing</a></li><li><a href="/skylark-education/dialogue-writing/">Dialogue Writing</a></li></ul>
+        </details>
+        <details class="mn-group">
+          <summary>Reports &amp; CV</summary>
+          <ul><li><a href="/skylark-education/cv-writing/">CV Writing</a></li><li><a href="/skylark-education/report-writing/">Report Writing</a></li></ul>
+        </details>
+        <details class="mn-group">
+          <summary>Graph &amp; Chart Writing</summary>
+          <ul><li><a href="/skylark-education/graph-chart/">Graph/Chart</a></li></ul>
+        </details>
+        <details class="mn-group">
+          <summary>Notices &amp; Complaints</summary>
+          <ul><li><a href="/skylark-education/complaint-letter-notice/">Complaint Letter/Notice</a></li></ul>
+        </details></div><div class="mn-section"><p class="mn-label">Board Questions</p>
+        <details class="mn-group">
+          <summary>SSC</summary>
+          <ul><li><a href="/skylark-education/board-question/ssc/">SSC Board Questions</a></li><li><a href="/skylark-education/marks-distribution-for-ssc-2026/">Marks Distribution SSC 2026</a></li><li><a href="/skylark-education/marks-distribution-for-ssc-2025/">Marks Distribution SSC 2025</a></li><li><a href="/skylark-education/paragraphs-ssc-dakhil-2025/">Paragraphs for SSC 2025</a></li></ul>
+        </details>
+        <details class="mn-group">
+          <summary>HSC</summary>
+          <ul><li><a href="/skylark-education/board-question/hsc/">HSC Board Questions</a></li><li><a href="/skylark-education/marks-distribution-for-hsc-2026/">Marks Distribution HSC 2026</a></li><li><a href="/skylark-education/marks-distribution-for-hsc-2025/">Marks Distribution HSC 2025</a></li><li><a href="/skylark-education/paragraphs-hsc-alim-2026/">Paragraphs for HSC 2026</a></li></ul>
+        </details>
+        <details class="mn-group">
+          <summary>Resources</summary>
+          <ul><li><a href="/skylark-education/all-board-2025/">All Board 2025</a></li><li><a href="/skylark-education/all-board-2026/">All Board 2026</a></li><li><a href="/skylark-education/hsc-english-2nd-paper-board-question/">HSC 2nd Paper Board Questions</a></li><li><a href="/skylark-education/board-question/marks-distribution/">Class 6–8 Marks Distributions</a></li></ul>
+        </details></div><div class="mn-section"><p class="mn-label"><a href="/skylark-education/admission/">Admission</a></p></div><div class="mn-section"><p class="mn-label"><a href="/skylark-education/contact/">Contact</a></p></div><div class="mn-cta">
+    <a class="btn btn-primary" href="/skylark-education/skylark-education/grammar/index.html">Explore Grammar</a>
+    <a class="btn btn-ghost" href="/skylark-education/skylark-education/board-question/index.html">Board Questions</a>
+  </div></nav></div>
+</header>
+<main class="site-main" id="main">
+<div class="container article-layout">
+  <article class="article-main">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/skylark-education/skylark-education/">Home</a></li><li><a href="/skylark-education/grammar/">Grammar</a></li><li aria-current="page">Dangling Modifiers</li></ol></nav>
+    <header class="article-header reveal">
+      <p class="kicker">Grammar</p>
+      <h1>Dangling Modifiers</h1>
+      <div class="article-meta"><span class="badge">Completing &amp; Modifiers</span></div>
+    </header>
+    <div class="prose reveal"><h2 id="h-0">Dangling Modifier</h2><p><em><strong>Definition:</strong> A dangling modifier is a descriptive phrase or clause that doesn’t logically relate to the word it intends to modify because that word is either missing or incorrectly placed in the sentence. This often leads to confusing or unintentionally humorous sentences.</em></p><p><em><strong>Example: </strong>&#8220;Walking down the street, the flowers bloomed beautifully.&#8221;</em></p><p><em>In this example, &#8220;Walking down the street&#8221; appears to modify &#8220;the flowers,&#8221; implying that the flowers were walking down the street! Since the subject intended to be modified (probably a person) isn’t clearly present, the modifier &#8220;dangles.&#8221;</em></p><p><em><strong>Correction:</strong>&#8220;Walking down the street, I saw the flowers blooming beautifully.&#8221;</em></p><p><em>Now, &#8220;I&#8221; is the subject who is walking down the street, which makes the sentence clearer.</em></p><h4 id="h-1"><em>Tips to Avoid Dangling Modifiers</em></h4><p><em><strong>a. Rephrase to Include the Subject:</strong> Ensure that the modifier is directly next to the noun it describes.</em></p><p><em><strong>b. Make the Main Subject Clear:</strong> Sometimes, restructuring the sentence entirely helps clarify the meaning.</em></p><p><em><strong>c. Double-Check After Editing:</strong> After writing, read sentences with introductory phrases carefully to ensure the subject is clear.</em></p><h3 id="h-2"><em>Structure of Dangling Modifiers</em></h3><p><em></em></p><p><em>Dangling modifiers often involve participle phrases or gerund phrases that do not clearly connect to a specific noun in the sentence. Some common forms are:</em></p><p><em><strong>a. Present Participle Phrases:</strong> These begin with &#8220;-ing&#8221; words like &#8220;walking,&#8221; &#8220;running,&#8221; &#8220;playing.&#8221;</em></p><p><em><strong>b. Past Participle Phrases:</strong> These begin with &#8220;-ed&#8221; words like &#8220;tired,&#8221; &#8220;excited,&#8221; or irregular past forms like &#8220;gone,&#8221; &#8220;taken.&#8221;</em></p><p><em><strong>c. Infinitive Phrases:</strong> These begin with &#8220;to&#8221; + a verb, like &#8220;to finish,&#8221; &#8220;to succeed.&#8221;</em></p><h3 id="h-3"><em>Examples and Corrections</em></h3><h4 id="h-4"><em><strong>Example 1</strong></em><br /><em>Incorrect: &#8220;While reading the novel, the themes were confusing.&#8221;</em></h4><p><em>Here, &#8220;While reading the novel&#8221; is intended to modify the person who is reading, but since that subject is missing, the phrase seems to be modifying &#8220;the themes,&#8221; implying that &#8220;the themes&#8221; were reading the novel.</em></p><p><em>Correction: &#8220;While reading the novel, I found the themes confusing.&#8221;</em></p><p><em>Now, &#8220;I&#8221; is clearly the subject who is reading the novel, and the sentence is more logical.</em></p><p><em><strong>Example 2</strong></em><br /><em><strong>Incorrect: </strong>&#8220;Having been absent for weeks, the assignment was difficult to understand.&#8221;</em></p><p><em>&#8220;Having been absent for weeks&#8221; seems to describe &#8220;the assignment,&#8221; suggesting that the assignment was absent.</em></p><p><em><strong>Correction:</strong> &#8220;Having been absent for weeks, the student found the assignment difficult to understand.&#8221;</em></p><p><em>Now, the phrase &#8220;Having been absent for weeks&#8221; correctly describes &#8220;the student.&#8221;</em></p><p><em><strong>Example 3</strong></em><br /><em><strong>Incorrect: </strong>&#8220;To improve his chances, the job application was submitted early.&#8221;</em></p><p><em>&#8220;To improve his chances&#8221; should logically apply to the person submitting the application, but without a clear subject, it seems to modify &#8220;the job application.&#8221;</em></p><p><em><strong>Correction:</strong> &#8220;To improve his chances, he submitted the job application early.&#8221;</em></p><p><em>Now, &#8220;he&#8221; is present as the subject, making the sentence clearer.</em></p><h4 id="h-5"><em>How to Identify and Fix Dangling Modifiers</em></h4><p><em><strong>a. Identify the Modifier Phrase:</strong> Look for introductory phrases, especially participle or infinitive phrases.</em></p><p><em><strong>b. Determine the Intended Subject:</strong> Consider who or what is logically performing the action or being described.</em></p><p><em><strong>c. Ensure the Modifier Has a Clear Subject:</strong> Revise the sentence so that the subject is explicitly included and logically connected to the modifier.</em></p><h4 id="h-6"><em>Why Dangling Modifiers Matter</em></h4><p><em>Dangling modifiers can create unintended meanings and make writing unclear or awkward. In academic, professional, and creative writing, clarity is essential for effective communication. Correcting these modifiers ensures that sentences convey the intended message accurately and enhance the readability of the text.</em></p><h4 id="h-7"><em>More examples of dangling modifier </em></h4><p><em><strong>Incorrect:</strong> While driving to work, a deer suddenly appeared.</em><br /><em><strong>Correct:</strong> While driving to work, I saw a deer suddenly appear.</em></p><p><em><strong>Incorrect:</strong> After finishing the book, the movie seemed disappointing.</em><br /><em><strong>Correct:</strong> After finishing the book, she found the movie disappointing.</em></p><p><em><strong>Incorrect:</strong> Without a map, the trail was difficult to navigate.</em><br /><em><strong>Correct:</strong> Without a map, we found the trail difficult to navigate.</em></p><p><em><strong>Incorrect:</strong> Walking through the park, the fountain caught my attention.</em><br /><em><strong>Correct:</strong> Walking through the park, I noticed the fountain.</em></p><p><em><strong>Incorrect:</strong> To pass the exam, hours of study are required.</em><br /><em><strong>Correct:</strong> To pass the exam, students need to study for hours.</em></p><p><em><strong>Incorrect:</strong> Running late for the meeting, the notes were left behind.</em><br /><em><strong>Correct:</strong> Running late for the meeting, he left the notes behind.</em></p><p><em><strong>Incorrect:</strong> Upon opening the box, a strange smell filled the room.</em><br /><em><strong>Correct:</strong> Upon opening the box, they noticed a strange smell filling the room.</em></p><p><em><strong>Incorrect:</strong> Broken and abandoned, the hiker found the old cabin.</em><br /><em><strong>Correct:</strong> Broken and abandoned, the old cabin was found by the hiker.</em></p><p><em><strong>Incorrect:</strong> After cooking for hours, the meal was finally ready.</em><br /><em><strong>Correct:</strong> After cooking for hours, she had the meal finally ready.</em></p><p><em><strong>Incorrect:</strong> Reaching the top of the mountain, the view was breathtaking.</em><br /><em><strong>Correct:</strong> Reaching the top of the mountain, we found the view breathtaking.</em></p><p><em><strong>Incorrect:</strong> Eager to impress, the speech was memorized by heart.</em><br /><em><strong>Correct:</strong> Eager to impress, she memorized the speech by heart.</em></p><p><em><strong>Incorrect:</strong> While riding my bike, a squirrel ran across the road.</em><br /><em><strong>Correct:</strong> While riding my bike, I saw a squirrel run across the road.</em></p><p><em><strong>Incorrect:</strong> Looking for a new book, the library was a great place to visit.</em><br /><em><strong>Correct:</strong> Looking for a new book, he visited the library.</em></p><p><em><strong>Incorrect:</strong> Covered in snow, the children built a snowman.</em><br /><em><strong>Correct:</strong> The children, covered in snow, built a snowman.</em></p><p><em><strong>Incorrect:</strong> Driving down the highway, the ocean could be seen in the distance.</em><br /><em><strong>Correct:</strong> Driving down the highway, we could see the ocean in the distance.</em></p><p><em><strong>Incorrect:</strong> Excited for the concert, the tickets were purchased early.</em><br /><em><strong>Correct:</strong> Excited for the concert, she purchased the tickets early.</em></p><p><em><strong>Incorrect:</strong> Watching the storm roll in, the waves became violent.</em><br /><em><strong>Correct:</strong> Watching the storm roll in, we noticed the waves becoming violent.</em></p><p><em><strong>Incorrect:</strong> To prepare for the trip, a checklist was made.</em><br /><em><strong>Correct:</strong> To prepare for the trip, he made a checklist.</em></p><p><em><strong>Incorrect:</strong> Taking a break from studying, the dog was petted.</em><br /><em><strong>Correct:</strong> Taking a break from studying, she petted the dog.</em></p><p><em><strong>Incorrect:</strong> To learn the skill, practice is essential.</em><br /><em><strong>Correct:</strong> To learn the skill, one must practice.</em></p><p><em><strong>Incorrect:</strong> Hungry after a long day, the meal was devoured.</em><br /><em><strong>Correct:</strong> Hungry after a long day, he devoured the meal.</em></p><p><em><strong>Incorrect:</strong> While cleaning the attic, old photos were discovered.</em><br /><em><strong>Correct:</strong> While cleaning the attic, she discovered old photos.</em></p><p><em><strong>Incorrect:</strong> Blowing in the wind, the flowers looked beautiful.</em><br /><em><strong>Correct:</strong> The flowers looked beautiful, blowing in the wind.</em></p><p><em><strong>Incorrect:</strong> After finishing her homework, the computer was turned off.</em><br /><em><strong>Correct:</strong> After finishing her homework, she turned off the computer.</em></p><p><em><strong>Incorrect:</strong> To improve his grades, extra credit was completed.</em><br /><em><strong>Correct:</strong> To improve his grades, he completed the extra credit.</em></p><p><em><strong>Incorrect:</strong> Walking along the beach, seashells were collected.</em><br /><em><strong>Correct:</strong> Walking along the beach, we collected seashells.</em></p><p><em><strong>Incorrect:</strong> Without knowing anyone, the party was overwhelming.</em><br /><em><strong>Correct:</strong> Without knowing anyone, he found the party overwhelming.</em></p><p><em><strong>Incorrect:</strong> Climbing the steep hill, the view was worth it.</em><br /><em><strong>Correct:</strong> Climbing the steep hill, we found the view worth it.</em></p><p><em><strong>Incorrect:</strong> Hoping to catch the bus, the backpack was grabbed quickly.</em><br /><em><strong>Correct:</strong> Hoping to catch the bus, she grabbed her backpack quickly.</em></p><p><em><strong>Incorrect:</strong> Exhausted from the journey, the hotel looked inviting.</em><br /><em><strong>Correct:</strong> Exhausted from the journey, they found the hotel inviting.</em></p><p><em><strong>Incorrect:</strong> Shivering in the cold, the fire was a welcome sight.</em><br /><em><strong>Correct:</strong> Shivering in the cold, she found the fire a welcome sight.</em></p><p><em><strong>Incorrect:</strong> Without warning, the storm approached rapidly.</em><br /><em><strong>Correct:</strong> Without warning, we saw the storm approach rapidly.</em></p><p><em><strong>Incorrect:</strong> Rushing out the door, the keys were forgotten.</em><br /><em><strong>Correct:</strong> Rushing out the door, she forgot her keys.</em></p><p><em><strong>Incorrect:</strong> Walking through the forest, the birds sang beautifully.</em><br /><em><strong>Correct:</strong> Walking through the forest, he heard the birds singing beautifully.</em></p><p><em><strong>Incorrect:</strong> To find peace, the garden was visited often.</em><br /><em><strong>Correct:</strong> To find peace, she visited the garden often.</em></p><p><em><strong>Incorrect:</strong> Looking out the window, the rain poured down.</em><br /><em><strong>Correct:</strong> Looking out the window, he watched the rain pour down.</em></p><p><em><strong>Incorrect:</strong> To reach the summit, the trail was long and steep.</em><br /><em><strong>Correct:</strong> To reach the summit, they hiked a long and steep trail.</em></p><p><em><strong>Incorrect:</strong> Watching the sunrise, the sky was a beautiful mix of colors.</em><br /><em><strong>Correct:</strong> Watching the sunrise, she admired the sky’s beautiful mix of colors.</em></p><p><em><strong>Incorrect:</strong> Searching for his keys, the entire house was turned upside down.</em><br /><em><strong>Correct:</strong> Searching for his keys, he turned the entire house upside down.</em></p><p><em><strong>Incorrect:</strong> Driven by ambition, the job application was completed immediately.</em><br /><em><strong>Correct:</strong> Driven by ambition, he completed the job application immediately.</em></p><p><em><strong>Incorrect:</strong> Hurrying to answer the phone, the coffee was spilled.</em><br /><em><strong>Correct:</strong> Hurrying to answer the phone, she spilled her coffee.</em></p><p><em><strong>Incorrect:</strong> Admiring the painting, the brushstrokes were mesmerizing.</em><br /><em><strong>Correct:</strong> Admiring the painting, he found the brushstrokes mesmerizing.</em></p><p><em><strong>Incorrect:</strong> After months of planning, the event was a huge success.</em><br /><em><strong>Correct:</strong> After months of planning, they enjoyed the event’s huge success.</em></p><p><em><strong>Incorrect:</strong> To win the race, speed and stamina are crucial.</em><br /><em><strong>Correct:</strong> To win the race, a runner needs both speed and stamina.</em></p><p><em><strong>Incorrect:</strong> Looking through the telescope, the stars seemed closer than ever.</em><br /><em><strong>Correct:</strong> Looking through the telescope, she saw the stars closer than ever.</em></p><p><em><strong>Incorrect:</strong> After baking all afternoon, the cake was delicious.</em><br /><em><strong>Correct:</strong> After baking all afternoon, she found the cake delicious.</em></p><p><em><strong>Incorrect:</strong> Covered in mud, the car needed a wash.</em><br /><em><strong>Correct:</strong> The car, covered in mud, needed a wash.</em></p><p><em><strong>Incorrect:</strong> Standing at the edge of the cliff, the valley stretched out below.</em><br /><em><strong>Correct:</strong> Standing at the edge of the cliff, she gazed at the valley stretched out below.</em></p><p><em><strong>Incorrect:</strong> Hoping for a discount, the items were bought in bulk.</em><br /><em><strong>Correct:</strong> Hoping for a discount, they bought the items in bulk.</em></p><p><em><strong>Incorrect:</strong> Reading quietly, the library was peaceful.</em><br /><em><strong>Correct:</strong> Reading quietly, she found the library peaceful.</em></p><p><em><strong>Incorrect:</strong> Running late for the meeting, the train was missed.</em><br /><em><strong>Correct:</strong> Running late for the meeting, she missed the train.</em></p><p><em><strong>Incorrect:</strong> Walking through the forest, the trees looked ancient.</em><br /><em><strong>Correct:</strong> Walking through the forest, he noticed the trees looked ancient.</em></p><p><em><strong>Incorrect:</strong> To be successful, dedication is necessary.</em><br /><em><strong>Correct:</strong> To be successful, one must have dedication.</em></p><p><em><strong>Incorrect:</strong> Having completed the project, the celebration began.</em><br /><em><strong>Correct:</strong> Having completed the project, the team began the celebration.</em></p><p><em><strong>Incorrect:</strong> After running five miles, the shower was refreshing.</em><br /><em><strong>Correct:</strong> After running five miles, he found the shower refreshing.</em></p><p><em><strong>Incorrect:</strong> After reading the book, the movie was disappointing.</em><br /><em><strong>Correct:</strong> After reading the book, she found the movie disappointing.</em></p><p><em><strong>Incorrect:</strong> Driving through the city, the buildings seemed enormous.</em><br /><em><strong>Correct:</strong> Driving through the city, he noticed the buildings seemed enormous.</em></p><p><em><strong>Incorrect:</strong> Watching the sunset, the sky turned pink.</em><br /><em><strong>Correct:</strong> Watching the sunset, I saw the sky turn pink.</em></p><p><em><strong>Incorrect:</strong> Looking out the window, the mountain peaks were visible.</em><br /><em><strong>Correct:</strong> Looking out the window, she saw the mountain peaks were visible.</em></p><p><em><strong>Incorrect:</strong> To improve your health, exercise is key.</em><br /><em><strong>Correct:</strong> To improve your health, you must exercise regularly.</em></p><p><em><strong>Incorrect:</strong> Running down the street, the rain started pouring.</em><br /><em><strong>Correct:</strong> Running down the street, he felt the rain start pouring.</em></p><p><em><strong>Incorrect:</strong> Hearing the loud crash, the glass shattered.</em><br /><em><strong>Correct:</strong> Hearing the loud crash, she saw the glass shatter.</em></p><p><em><strong>Incorrect:</strong> After finishing the assignment, the computer was turned off.</em><br /><em><strong>Correct:</strong> After finishing the assignment, she turned off the computer.</em></p><p><em><strong>Incorrect:</strong> Walking in the park, the flowers smelled wonderful.</em><br /><em><strong>Correct:</strong> Walking in the park, I noticed the flowers smelled wonderful.</em></p><p><em><strong>Incorrect:</strong> Looking at the sky, the stars were shining brightly.</em><br /><em><strong>Correct:</strong> Looking at the sky, he saw the stars shining brightly.</em></p><p><em><strong>Incorrect:</strong> To enjoy the beach, sunscreen is essential.</em><br /><em><strong>Correct:</strong> To enjoy the beach, you must apply sunscreen.</em></p><p><em><strong>Incorrect:</strong> Having made dinner, the table was set.</em><br /><em><strong>Correct:</strong> Having made dinner, she set the table.</em></p><p><em><strong>Incorrect:</strong> Running down the stairs, the door slammed shut.</em><br /><em><strong>Correct:</strong> Running down the stairs, she heard the door slam shut.</em></p><p><em><strong>Incorrect:</strong> After finishing the book, the ending was surprising.</em><br /><em><strong>Correct:</strong> After finishing the book, I found the ending surprising.</em></p><p><em><strong>Incorrect:</strong> Speaking loudly, the room became quiet.</em><br /><em><strong>Correct:</strong> Speaking loudly, he made the room become quiet.</em></p><p><em><strong>Incorrect:</strong> Looking for a job, the internet was helpful.</em><br /><em><strong>Correct:</strong> Looking for a job, she found the internet helpful.</em></p><p><em><strong>Incorrect:</strong> Playing the piano for hours, the fingers became sore.</em><br /><em><strong>Correct:</strong> Playing the piano for hours, his fingers became sore.</em></p><p><em><strong>Incorrect:</strong> To fix the issue, a new system was implemented.</em><br /><em><strong>Correct:</strong> To fix the issue, they implemented a new system.</em></p><p><em><strong>Incorrect:</strong> Walking to the store, the bag broke.</em><br /><em><strong>Correct:</strong> Walking to the store, she noticed the bag broke.</em></p><p><em><strong>Incorrect:</strong> Hoping for good weather, the picnic was canceled.</em><br /><em><strong>Correct:</strong> Hoping for good weather, they canceled the picnic.</em></p><p><em><strong>Incorrect:</strong> Waiting for the bus, the rain started pouring.</em><br /><em><strong>Correct:</strong> Waiting for the bus, I saw the rain start pouring.</em></p><p><em><strong>Incorrect:</strong> Drinking coffee, the morning was bright and cheerful.</em><br /><em><strong>Correct:</strong> Drinking coffee, she felt the morning was bright and cheerful.</em></p><p><em><strong>Incorrect:</strong> Without a plan, the project was a disaster.</em><br /><em><strong>Correct:</strong> Without a plan, they found the project to be a disaster.</em></p><p><em><strong>Incorrect:</strong> Hoping to find the answer, the problem was solved quickly.</em><br /><em><strong>Correct:</strong> Hoping to find the answer, she solved the problem quickly.</em></p><p><em><strong>Incorrect:</strong> Without any warning, the dog ran into the street.</em><br /><em><strong>Correct:</strong> Without any warning, the dog darted into the street.</em></p><p><em><strong>Incorrect:</strong> Looking at the map, the route was unclear.</em><br /><em><strong>Correct:</strong> Looking at the map, I found the route unclear.</em></p><p><em><strong>Incorrect:</strong> After taking a walk, the day seemed brighter.</em><br /><em><strong>Correct:</strong> After taking a walk, she felt the day seemed brighter.</em></p><p><em><strong>Incorrect:</strong> Seeing the results, the experiment was a success.</em><br /><em><strong>Correct:</strong> Seeing the results, she concluded the experiment was a success.</em></p><p><em><strong>Incorrect:</strong> To keep the plants healthy, water is important.</em><br /><em><strong>Correct:</strong> To keep the plants healthy, you need to water them regularly.</em></p><p><em><strong>Incorrect:</strong> Reaching the top of the mountain, the view was amazing.</em><br /><em><strong>Correct:</strong> Reaching the top of the mountain, we saw the view was amazing.</em></p><p><em><strong>Incorrect:</strong> Taking a break from studying, the dog was played with.</em><br /><em><strong>Correct:</strong> Taking a break from studying, she played with the dog.</em></p><p><em><strong>Incorrect:</strong> After running a marathon, the celebration was fun.</em><br /><em><strong>Correct:</strong> After running a marathon, he enjoyed the celebration.</em></p><p><em><strong>Incorrect:</strong> Looking for the book, the shelf was reorganized.</em><br /><em><strong>Correct:</strong> Looking for the book, she reorganized the shelf.</em></p><p><em><strong>Incorrect:</strong> Sitting in the front row, the concert was thrilling.</em><br /><em><strong>Correct:</strong> Sitting in the front row, she found the concert thrilling.</em></p><p><em><strong>Incorrect:</strong> While studying, the music was turned off.</em><br /><em><strong>Correct:</strong> While studying, he turned off the music.</em></p><p><em><strong>Incorrect:</strong> Having practiced for hours, the competition was easy.</em><br /><em><strong>Correct:</strong> Having practiced for hours, she found the competition easy.</em></p><p><em><strong>Incorrect:</strong> Driving fast through the city, the sights were beautiful.</em><br /><em><strong>Correct:</strong> Driving fast through the city, he noticed the sights were beautiful.</em></p><p><em><strong>Incorrect:</strong> After cleaning the house, the floor was shiny.</em><br /><em><strong>Correct:</strong> After cleaning the house, she noticed the floor was shiny.</em></p><p><em><strong>Incorrect:</strong> To have a great time, friends are needed.</em><br /><em><strong>Correct:</strong> To have a great time, you need good friends.</em></p><p><em><strong>Incorrect:</strong> Hoping to finish the task, the deadline was missed.</em><br /><em><strong>Correct:</strong> Hoping to finish the task, she missed the deadline.</em></p><p><em><strong>Incorrect:</strong> Looking at the cake, the frosting was thick.</em><br /><em><strong>Correct:</strong> Looking at the cake, she noticed the frosting was thick.</em></p><p><em><strong>Incorrect:</strong> While cooking dinner, the phone rang.</em><br /><em><strong>Correct:</strong> While cooking dinner, she answered the phone.</em></p><p><em><strong>Incorrect:</strong> After finishing the class, the students were excited.</em><br /><em><strong>Correct:</strong> After finishing the class, the students felt excited.</em></p><p><em><strong>Incorrect:</strong> Running through the park, the weather was pleasant.</em><br /><em><strong>Correct:</strong> Running through the park, he found the weather pleasant.</em></p><p><em><strong>Incorrect:</strong> After practicing the dance, the performance went well.</em><br /><em><strong>Correct:</strong> After practicing the dance, she found the performance went well.</em></p></div>
+    <nav class="article-nav" aria-label="More in this section">
+    <a href="/skylark-education/modifier/"><span class="dir">← Previous</span><span class="name">Modifier</span></a>
+    <span></span>
+  </nav>
+    <section class="related reveal">
+    <div class="section-head"><p class="kicker">Related resources</p></div>
+    <div class="grid-3">
+      <a class="card" href="/skylark-education/completing-sentences/">
+        <span class="badge">grammar</span>
+        <h3 class="card-title">Completing Sentences</h3>
+      </a>
+      <a class="card" href="/skylark-education/rules-on-completing-sentences/">
+        <span class="badge">grammar</span>
+        <h3 class="card-title">Rules on Completing Sentences</h3>
+      </a>
+      <a class="card" href="/skylark-education/exercises-on-completing-sentences-for-hsc/">
+        <span class="badge">grammar</span>
+        <h3 class="card-title">Exercises on Completing Sentences for HSC</h3>
+      </a></div>
+  </section>
+  </article>
+  <aside class="article-aside"><nav class="toc" aria-label="On this page"><p class="toc-title">On this page</p><ul><li><a class="toc-link toc-l2" href="#h-0">Dangling Modifier</a></li><li><a class="toc-link toc-l4" href="#h-1">Tips to Avoid Dangling Modifiers</a></li><li><a class="toc-link toc-l3" href="#h-2">Structure of Dangling Modifiers</a></li><li><a class="toc-link toc-l3" href="#h-3">Examples and Corrections</a></li><li><a class="toc-link toc-l4" href="#h-4">Example 1 Incorrect: &amp;#8220;While reading the novel, the themes were confusing.&amp;#8221;</a></li><li><a class="toc-link toc-l4" href="#h-5">How to Identify and Fix Dangling Modifiers</a></li><li><a class="toc-link toc-l4" href="#h-6">Why Dangling Modifiers Matter</a></li><li><a class="toc-link toc-l4" href="#h-7">More examples of dangling modifier</a></li></ul></nav></aside>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="brand brand--light" href="/skylark-education/skylark-education/" aria-label="Skylark Education — home">
+        <svg class="brand-mark" viewBox="0 0 44 44" width="40" height="40" fill="none" aria-hidden="true">
+    <circle cx="22" cy="22" r="21" class="bm-ring"/>
+    <path d="M8 29c4.5 3.4 9 5 14 5s9.5-1.6 14-5" class="bm-book"/>
+    <path d="M13 24c3.5-8 8-12.5 15-14-2.5 4.4-2.7 8-1 11.2-2.8-.5-4.6-1.8-5.6-3.7-.4 2.9.8 5.2 3.5 6.9-4 .9-8.1.7-11.9-.4z" class="bm-bird"/>
+    <path d="M28 27l3.4 2.2L28.4 31" class="bm-note"/>
+  </svg>
+        <span class="brand-text"><strong>Skylark</strong> <span>Education</span></span>
+      </a>
+      <p class="footer-tag">Nurturing young recruits with pride and care.</p>
+      <p class="footer-blurb">A rule-and-example-rich English learning resource for school and college students — built by teachers, aligned with the syllabus.</p>
+      <div class="footer-social">
+        <a href="mailto:tuhin0011@gmail.com" aria-label="Email"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a>
+        <a href="https://wa.me/8801521441859" rel="noopener" aria-label="WhatsApp"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.1 13.9c-.2.6-1.2 1.1-1.7 1.1-.4.1-1 .1-1.6-.1a13 13 0 0 1-5.8-5.1c-.6-1-.9-1.9-.9-2.7 0-.8.4-1.5.8-1.9.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6c-.2.2-.3.4-.1.7a8 8 0 0 0 3.6 3.1c.3.1.5.1.7-.1l.8-.9c.2-.3.4-.2.7-.1l2 1c.3.2.5.3.5.5s0 .8-.4 1.2z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h3>Learn</h3>
+      <ul><li><a href="/skylark-education/grammar/">Grammar Topics</a></li><li><a href="/skylark-education/english-literature/">English Literature</a></li><li><a href="/skylark-education/creative-writing/">Creative Writing</a></li><li><a href="/skylark-education/academic/">Academic Resources</a></li><li><a href="/skylark-education/admission/">Admission</a></li></ul>
+    </div>
+    <div class="footer-col">
+      <h3>Examinations</h3>
+      <ul><li><a href="/skylark-education/board-question/">Board Question Hub</a></li><li><a href="/skylark-education/board-question/ssc/">SSC Board Questions</a></li><li><a href="/skylark-education/board-question/hsc/">HSC Board Questions</a></li><li><a href="/skylark-education/board-question/marks-distribution/">Marks Distributions</a></li></ul>
+    </div>
+    <div class="footer-col">
+      <h3>Institute</h3>
+      <ul><li><a href="/skylark-education/about/">About &amp; Preface</a></li><li><a href="/skylark-education/contact/">Contact</a></li><li><a href="/skylark-education/privacy-policy/">Privacy Policy</a></li><li><a href="/skylark-education/search/">Search</a></li></ul>
+      <address>
+        Skylark Education<br>45 Navy Market, Mirpur 14, Dhaka 1206<br>
+        <a href="tel:+8801521441859">+8801521441859</a><br><a href="tel:+8801710730506">+8801710730506</a><br>
+        <a href="mailto:tuhin0011@gmail.com">tuhin0011@gmail.com</a>
+      </address>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© <span data-footer-year>2026</span> Skylark Education, Mirpur, Dhaka. All rights reserved.</p>
+    <p><a href="/skylark-education/skylark-education/privacy-policy/index.html">Privacy Policy</a></p>
+  </div>
+</footer>
+<button class="back-to-top" type="button" aria-label="Back to top">
+  <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 13V3M3.5 7.5L8 3l4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<div class="search-overlay" hidden>
+  <div class="search-panel" role="dialog" aria-modal="true" aria-label="Search Skylark Education">
+    <div class="search-box">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M20 20l-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <input class="search-input" type="search" placeholder="Search grammar topics, poems, board questions…" aria-label="Search" autocomplete="off" spellcheck="false">
+      <button class="search-close" type="button" aria-label="Close search">Esc</button>
+    </div>
+    <div class="search-results" aria-live="polite"></div>
+  </div>
+</div>
+<script src="/skylark-education/skylark-education/assets/js/main.js" defer></script>
+</body>
+</html>
